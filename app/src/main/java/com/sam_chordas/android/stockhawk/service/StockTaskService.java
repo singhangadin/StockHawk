@@ -15,6 +15,7 @@ import android.widget.Toast;
 import com.google.android.gms.gcm.GcmNetworkManager;
 import com.google.android.gms.gcm.GcmTaskService;
 import com.google.android.gms.gcm.TaskParams;
+import com.sam_chordas.android.stockhawk.R;
 import com.sam_chordas.android.stockhawk.data.QuoteColumns;
 import com.sam_chordas.android.stockhawk.data.QuoteProvider;
 import com.sam_chordas.android.stockhawk.rest.Utils;
@@ -141,7 +142,7 @@ public class StockTaskService extends GcmTaskService {
                 handler.post(new Runnable() {
                     @Override
                     public void run() {
-                        Toast.makeText(mContext, "No Stock found by this name.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(mContext, getResources().getString(R.string.error_stock_not_found), Toast.LENGTH_SHORT).show();
                     }
                 });
             }

@@ -10,4 +10,5 @@
   <string name="network_toast" translatable="true">Uh-oh! This app requires an internet connection</string>
   <string name="empty_message" translatable="true">No Data is Available</string>
   <string name="symbol_label" translatable="false">symbol</string>
+  <string name="error_stock_not_found" translatable="true">No Stock found by this name.</string>
 </resources>
